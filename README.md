@@ -19,7 +19,7 @@ He can talk to you if you enable his voice. He can tell you the weather, can gre
 
 This is a very basic desktop applictaion which you can run from command line or you can run it on any Python IDE like **Pycharm**
 
-**Programming Language :** Python 3.7.0
+**Programming Language :** Python 3.8.5
 
 **Libraries used :** speech_recognition, pyttsx3,
  datetime, 
