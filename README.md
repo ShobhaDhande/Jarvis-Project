@@ -55,4 +55,7 @@ To deploy this project
   5.Enjoy :) the application.
   ```
 
-  
+## Authors
+
+- [@ShobhaDhande](https://github.com/ShobhaDhande)
+- [@AaditiNirfarake](https://github.com/Aaditi-S)
