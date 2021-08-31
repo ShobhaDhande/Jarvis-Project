@@ -170,11 +170,6 @@ if __name__ =="__main__":
             speak("opening whatsapp")
             webbrowser.open("https://web.whatsapp.com/")
 
-        elif "close youtube" in query:
-            speak("closing youtube")
-            browserExe = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk"
-            os.system("taskkill /f /im "+browserExe)
-
         elif "the time" in query:
             Time = datetime.datetime.now().strftime("%H:%M:%S")
             
