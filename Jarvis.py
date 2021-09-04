@@ -16,8 +16,8 @@ engine = pyttsx3.init()
 
 #Set the speaking rate of the jarvis..
 engine.setProperty('rate', 120)
-# Here you can create your own dictionary/email contact
-email_list = {"Name":"example@gmail.com"}
+# contact list with name and email.
+email_list = {'name of email holder':'email'}
 credential = {}
 
 def speak(audio):
@@ -114,7 +114,7 @@ def send_email():
 
     """
     msg = MIMEMultipart()
-    msg["From"] = "Enter your email here...."
+    msg["From"] = "shobhadhande11@gmail.com"
     speak("whom you want to send email ?")
     email_name = command().lower().strip()
     email = email_list[email_name]
@@ -127,10 +127,10 @@ def send_email():
     msg.attach(MIMEText(body,'Plain'))
     s = smtplib.SMTP("smtp.gmail.com",587)
     s.starttls()
-    s.login("Enter your email here....","Enter your Email password here....")
+    s.login("shobhadhande11@gmail.com","Piemr#2019")
     text = msg.as_string()
     speak(f"sending email to {email_name}..")
-    s.sendmail("Enter your email here....",email,text)
+    s.sendmail("shobhadhande11@gmail.com",email,text)
     s.quit()
     speak(f"Mail sent successfully to {email_name}")
 
@@ -140,7 +140,11 @@ if __name__ =="__main__":
         This module can be used as jarvis or alexa. Which will take command from user and perform task accordingly.
         
     """
-
+    question = {"what can you do":"I can serach your query on wikipedia, i can open Youtube, i can open google, i can tell you the current time,\
+                i can send email for you if are a registered user, i can also open whatsapp web for you, i can make you laugh with few jocks,\
+                    i can tell you the current temperature, i can write notes for you as well and few more things. ",
+                "who are you":"I am your virtual assistant created by Shobha and Aditi"}
+    print(question.keys())
     wishMe()
     # user_credential()
     speak("How can i help you sir!")
@@ -185,9 +189,6 @@ if __name__ =="__main__":
         elif 'joke' in query:
                 speak(pyjokes.get_joke())
 
-        elif "who are you" in query:
-            speak("I am your virtual assistant created by Shobha and Aditi")
-
         elif "where is" in query:
             query = query.replace("where is", "")
             location = query
@@ -220,7 +221,16 @@ if __name__ =="__main__":
         elif "temperature" in query:
             speak('Please speak the place name.')
             weather_report(command())
+
+
+        elif query in question.keys():
+            print(query)
+            print("*"*90)
+            print(question[query])
+            print("*"*90)
+            speak(question[query])
  
         elif "thank you" in query:
             speak("okay! You can call me any time you need.")
             break
+    
