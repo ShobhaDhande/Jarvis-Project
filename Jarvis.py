@@ -224,10 +224,6 @@ if __name__ =="__main__":
 
 
         elif query in question.keys():
-            print(query)
-            print("*"*90)
-            print(question[query])
-            print("*"*90)
             speak(question[query])
  
         elif "thank you" in query:
