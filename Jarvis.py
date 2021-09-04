@@ -14,9 +14,9 @@ from email.mime.multipart import MIMEMultipart
 # Initialisation of pyttsx3
 engine = pyttsx3.init()
 
-#Set the speaking rate of the jarvis..
+# Set the speaking rate of the jarvis..
 engine.setProperty('rate', 120)
-# contact list with name and email.
+# contact list with name and email.....
 email_list = {'name of email holder':'email'}
 credential = {}
 
