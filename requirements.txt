@@ -1,0 +1,17 @@
+The libraries which you need to download and install explicitly are listed below: 
+
+1.  Python should be installed in your machine.(prefer to download version 3.5.0 or above)
+
+2.  speech_recognition libraries - 
+    command prompt>> pip install speechrecognition
+    
+    pyttsx3 - 
+    command prompt>> pip install pyttsx3
+    
+    wikipedia - 
+    command prompt>> pip install wikipedia
+    
+    smtplib - 
+    command prompt>> pip install smtplib
+
+once you installed all the above libraries you are ready to code, interpret and run the code. 
