@@ -13,5 +13,8 @@ The libraries which you need to download and install explicitly are listed below
     
     smtplib - 
     command prompt>> pip install smtplib
+    
+    pyjokes -
+    command prompt>> pip install pyjokes
 
 once you installed all the above libraries you are ready to code, interpret and run the code. 
